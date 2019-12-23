@@ -1,0 +1,18 @@
+plugins {
+	id 'java-library'
+}
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	def resilience4jVersion = "1.2.0"
+	
+	compile "io.github.resilience4j:resilience4j-circuitbreaker:${resilience4jVersion}"
+	compile "io.github.resilience4j:resilience4j-ratelimiter:${resilience4jVersion}"
+	compile "io.github.resilience4j:resilience4j-retry:${resilience4jVersion}"
+	compile "io.github.resilience4j:resilience4j-bulkhead:${resilience4jVersion}"
+	compile "io.github.resilience4j:resilience4j-cache:${resilience4jVersion}"
+	compile "io.github.resilience4j:resilience4j-timelimiter:${resilience4jVersion}"
+}
